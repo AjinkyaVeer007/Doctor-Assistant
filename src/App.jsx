@@ -5,9 +5,8 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
 import Dashboard from "./herosection/Dashboard";
-import MedicalStore from "./herosection/MedicalStore";
 import Statistics from "./herosection/Statistics";
-import Navbar from "./components/Navbar";
+import MedicineStore from "./herosection/MedicineStore";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,8 +31,8 @@ function App() {
           element: <Dashboard />,
         },
         {
-          path: "medicalstore",
-          element: <MedicalStore />,
+          path: "medicinestore",
+          element: <MedicineStore />,
         },
         {
           path: "statistics",

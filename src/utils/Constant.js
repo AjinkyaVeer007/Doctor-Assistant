@@ -5,9 +5,9 @@ export const navbarNavigations = [
     navigate: "/main/dashboard",
   },
   {
-    id: "medicalstore",
-    name: "Medical Store",
-    navigate: "/main/medicalstore",
+    id: "medicinestore",
+    name: "Medicine Store",
+    navigate: "/main/medicinestore",
   },
   {
     id: "statistics",
