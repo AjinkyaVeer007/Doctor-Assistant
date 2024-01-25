@@ -3,12 +3,17 @@ import "./App.css";
 import Layout from "./layout/Layout";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import PageNotFound from "./pages/PageNotFound";
+import Dashboard from "./herosection/Dashboard";
+import MedicalStore from "./herosection/MedicalStore";
+import Statistics from "./herosection/Statistics";
+import Navbar from "./components/Navbar";
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <Layout />,
+      path: "/*",
+      element: <PageNotFound />,
     },
     {
       path: "/register",
@@ -17,6 +22,24 @@ function App() {
     {
       path: "/login",
       element: <Login />,
+    },
+    {
+      path: "/main",
+      element: <Layout />,
+      children: [
+        {
+          path: "dashboard",
+          element: <Dashboard />,
+        },
+        {
+          path: "medicalstore",
+          element: <MedicalStore />,
+        },
+        {
+          path: "statistics",
+          element: <Statistics />,
+        },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;
