@@ -4,9 +4,9 @@ import Layout from "./layout/Layout";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
-import Dashboard from "./herosection/Dashboard";
 import Statistics from "./herosection/Statistics";
 import MedicineStore from "./herosection/MedicineStore";
+import DoctorDashboard from "./herosection/DoctoreDashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,8 +27,8 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: "dashboard",
-          element: <Dashboard />,
+          path: "dashboard/doctor",
+          element: <DoctorDashboard />,
         },
         {
           path: "medicinestore",

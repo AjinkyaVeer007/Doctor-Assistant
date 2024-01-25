@@ -2,7 +2,7 @@ export const navbarNavigations = [
   {
     id: "dashboard",
     name: "Dashboard",
-    navigate: "/main/dashboard",
+    navigate: "/main/dashboard/doctor",
   },
   {
     id: "medicinestore",
